@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <style>
+      .swiper {
+        width: 200px;
+        height: 200px;
+      }
+      .swiper .swiper-container {
+        width: 100px;
+        height: 100px;
+      }
+      .swiper .swiper-slide {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">a</div>
+          <div class="swiper-slide">n</div>
+          <div class="swiper-slide">c</div>
+          <div class="swiper-slide">d</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      new Swiper(".swiper .swiper-container", {
+        direction: "vertical",
+        autoplay: true,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
